@@ -63,3 +63,18 @@ Embedded JavaScript templates
 
 A node.js module for mongodb, that emulates the official mongodb API as much as possible.
 It wraps mongodb-native and is available through npm
+
+
+/**step 3**/
+
+Create files and folder in application directory
+
+
+1.Create folder server , client views
+
+   server : (For server side code in express)
+           index.js
+   views : (render from ejs)
+           index.html
+
+   client (for client side code in Angular2)
