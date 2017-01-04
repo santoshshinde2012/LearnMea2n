@@ -1,13 +1,27 @@
 {
-  "name": "MEA2N",
+  "name": "tasklist",
   "version": "1.0.0",
   "description": "A MEA2N app that allows users to manage task lists",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santoshshinde2012/LearnMea2n.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Express",
+    "Angular2"
+  ],
   "author": "Santosh Shinde",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santoshshinde2012/LearnMea2n/issues"
+  },
+  "homepage": "https://github.com/santoshshinde2012/LearnMea2n",
   "dependencies": {
     "body-parser": "^1.15.2",
     "ejs": "^2.5.5",
