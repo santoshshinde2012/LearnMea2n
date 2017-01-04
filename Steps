@@ -77,4 +77,68 @@ Create files and folder in application directory
    views : (render from ejs)
            index.html
 
-   client (for client side code in Angular2)
+   client
+          This directory contains all of the client-side files which includes the Angular2 code.
+
+   server.js
+
+      This file contains all of our server-side code, which implements our REST API.
+      It’s written in Node.js, using the Express framework and the MongoDB Node.js driver.
+
+
+    server.js
+
+       var express = require('express'),
+           path = require('path'),
+           bodyParser = require('body-parser'),
+           index = require('./server/index'),
+           port = 8080,
+           app = express();
+
+           //view engine
+
+           app.set('views',path.join(__dirname,'views'));
+           app.set('view engine','ejs');
+           app.engine('html',require('ejs').renderFile);
+
+           //set static folder
+
+           app.use(express.static(path.join(__dirname,'client')));
+
+           //body parser
+
+           app.use(bodyParser.json());
+           app.use(bodyParser.urlencoded({extended:false}));
+
+           app.use('/',index);
+
+           app.listen(port, function(){
+             console.log('server started at port '+port);
+           });
+
+  index.html
+
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+                <meta charset="utf-8">
+                <title>MEA2N</title>
+            </head>
+
+            <body>
+                <h1>Hello MEA2N</h1>
+            </body>
+
+            </html>
+
+index.js
+
+          var express = require('express'),
+              router = express.Router();
+
+              router.get('/',function(req,res,next){
+                res.render('index.html');
+              });
+
+              module.exports = router;
