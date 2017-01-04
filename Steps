@@ -1,3 +1,5 @@
+/**step 1**/
+
 $ npm init
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
@@ -17,7 +19,7 @@ test command:
 git repository:
 keywords:
 author: Santosh
-license: (ISC) 
+license: (ISC)
 About to write to /Users/webwerks/Documents/Workspace/Meanstack/LearnMea2n/package.json:
 
 {
@@ -36,3 +38,28 @@ About to write to /Users/webwerks/Documents/Workspace/Meanstack/LearnMea2n/packa
 Is this ok? (yes)
 
 $
+
+/**step 2**/
+
+$npm install express body-parser ejs mongojs --save
+
+Basic Dependencies
+
+1.express
+
+Express is a minimal and flexible Node.js web application
+framework that provides a robust set of features for web and mobile applications.
+
+2.body-parser
+
+Node.js body parsing middleware.
+Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
+
+3.ejs
+
+Embedded JavaScript templates
+
+4.mongojs
+
+A node.js module for mongodb, that emulates the official mongodb API as much as possible.
+It wraps mongodb-native and is available through npm
