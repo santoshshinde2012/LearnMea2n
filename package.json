@@ -1,0 +1,11 @@
+{
+  "name": "learnmea2n",
+  "version": "1.0.0",
+  "description": "Basic steps to learn mea2n",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santosh",
+  "license": "ISC"
+}
