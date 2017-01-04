@@ -17,7 +17,7 @@ $ npm install -g bower
 
 
 ```bash
-$ git clone -b dev --single-branch https://github.com/santoshshinde2012/LearnMea2n.git
+$ git clone https://github.com/santoshshinde2012/LearnMea2n.git
 ```
 
 ## Quick Install
